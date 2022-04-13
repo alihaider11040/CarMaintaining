@@ -1,0 +1,6 @@
+VIN number,make,model,year,registration,owner,CID,
+12345AB,Toyota,RAV4,2018,KW803,James Bond,85858585,
+57865CD,Mazda,CX5,2020,KW888,John Smith,75757573,
+90988XR,Mitsubishi,Galant,2008,KW444,Jane Doe,8876433,
+74643TT,MG,X5,2020,KW332,Lulu Smith,9443332,
+33423RF,Mercedes,GLA,2021,KW773,Ghadeer Doe,8934453,

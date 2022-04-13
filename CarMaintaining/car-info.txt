@@ -1,0 +1,36 @@
+Car Registration Details:
+VIN : 74643TT
+Make : MG
+Model : X5
+Year : 2020
+Registration : KW332
+Owner Name : Lulu Smith
+Owner CID : 9443332
+Job Request - 1
+VIN_Number:74643TT
+Department:express
+Job_description:oild change
+Job_status:closed
+Date_of_admission:04-03-2020
+Date_of_release:05-03-2020
+Total_cost:20
+
+
+Job Request - 2
+VIN_Number:74643TT
+Department:major
+Job_description:engine head
+Job_status:open
+Date_of_admission:03-01-2022
+Date_of_release:open
+Total_cost:400
+
+
+Job Request - 3
+VIN_Number:74643TT
+Department:express
+Job_description:break pedals
+Job_status:closed
+Date_of_admission:02-05-2020
+Date_of_release:06-05-2020
+Total_cost:200
