@@ -43,6 +43,7 @@ void Registration_Input_from_file(Vehicle_Registration V[100], int& V_size) {
 	myfile.open("registration-info.txt");
 	myfile.ignore(51);
 	int s;
+	
 	while (!myfile.eof()) {
 		getline(myfile, V[V_size].VIN_Number, ',');
 		getline(myfile, V[V_size].Car_Make, ',');
@@ -58,10 +59,12 @@ void Registration_Input_from_file(Vehicle_Registration V[100], int& V_size) {
 // get registration input from the terminal/ from user
 Vehicle_Registration getting_input() {
 	Vehicle_Registration V;
+	cin.ignore();
 	cout << "VIN : "; getline(cin, V.VIN_Number);
 	cout << "Make : "; getline(cin, V.Car_Make);
 	cout << "Model : "; getline(cin, V.Car_model);
 	cout << "Year : "; cin >> V.Year_of_build;
+	cin.ignore();
 	cout << "Registration Number : "; getline(cin, V.Registration_number);
 	cout << "Owner_Name : "; getline(cin, V.Owner_Name);
 	cout << "Owner_CID : "; cin >> V.Owner_CID;
@@ -69,9 +72,11 @@ Vehicle_Registration getting_input() {
 }
 // updating the information in vheicle registartion
 void Updating_Information(Vehicle_Registration& V) {
+	
 	cout << "What Would You Like to Change ??" << endl;
 	cout << "1-VIN\n2-Make\n3-Model\n4-Year\n5-Registration Number\n6-Owner Name\n7-Owner ID\n";
 	int k; cin >> k;
+	cin.ignore();
 	if (k == 1) {
 		cout << "VIN : "; getline(cin, V.VIN_Number);
 	}if (k == 2) {
@@ -194,6 +199,7 @@ void Job_Input_from_file(vector <Job_request> Job[500], int& size) {
 	string s;
 	while (!myfile.eof()) {
 		Job_request J;
+		
 		getline(myfile, J.VIN_Number, ',');
 		getline(myfile, J.Department, ',');
 		getline(myfile, J.Job_description, ',');
@@ -257,6 +263,7 @@ void Open_Close_Each_Department(vector <Job_request> Job[500], int size, string 
 //input new job from user / terminal
 Job_request Input_new_job() {
 	Job_request J;
+	cin.ignore();
 	cout << "VIN Number : "; getline(cin, J.VIN_Number);
 	cout << "Department : "; getline(cin, J.Department);
 	cout << "Job_description : "; getline(cin, J.Job_description);
@@ -336,6 +343,7 @@ int main() {
 			cout << "Addition Car Done" << endl;
 		}
 		if (n == 2) {//modify for 2
+			cin.ignore();
 			string Vin;
 			cout << "VIN : "; getline(cin, Vin);
 			modify_car(V, Vin, V_size);
